@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Memory">
+      <UniqueIdentifier>{5582273f-71b0-44ff-9bf0-07da2bedf660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hooks">
+      <UniqueIdentifier>{fe12850a-c915-40e4-9daa-c029784b4ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Memory">
+      <UniqueIdentifier>{bce899c9-82f7-4864-9b49-13af25003f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hooks">
+      <UniqueIdentifier>{a586d787-2873-408b-8205-500c36de605c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{40407e65-188f-4676-a3de-74fbd6a15776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\java">
+      <UniqueIdentifier>{3c92268d-57f7-47e2-b952-0b25a0b65bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\java\util">
+      <UniqueIdentifier>{f46fca74-8fec-4d19-9155-d96538e6789d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net">
+      <UniqueIdentifier>{34d5e92e-f06e-43b7-afed-d8b1abc5a838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft">
+      <UniqueIdentifier>{107f106d-51e2-415e-ad98-85bed53abd41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world">
+      <UniqueIdentifier>{b714d4af-3c6e-422e-83b6-d0e9489c1027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\item">
+      <UniqueIdentifier>{37606f34-ad25-44c6-ab36-1f6e2bf0e814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\phys">
+      <UniqueIdentifier>{ad7d969c-d49e-43ad-9bf1-c3d1b3e611c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\phys\shapes">
+      <UniqueIdentifier>{9346edbe-ab34-449c-9401-c9b9dc28de9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\com">
+      <UniqueIdentifier>{403642c5-88d1-4b35-b7ec-9020c74896bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\com\mojang">
+      <UniqueIdentifier>{bbf957ac-6664-4e17-86fb-6245ea079074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\com\mojang\math">
+      <UniqueIdentifier>{7f50c550-80d8-4618-9ee2-062a7e0cc527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\core">
+      <UniqueIdentifier>{832688f8-3718-4a2f-a87d-f4b93294de27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\level">
+      <UniqueIdentifier>{b5a212d8-0c3d-4925-84f8-136ce29d6264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\level\block">
+      <UniqueIdentifier>{e1038d08-f199-4af9-ae23-17e9b628372d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\level\block\state">
+      <UniqueIdentifier>{c0fd925a-9b41-4ef3-853e-6091a8bb09a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\entity">
+      <UniqueIdentifier>{4951bd0f-dc46-40f0-b0e6-18b51a087569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\client">
+      <UniqueIdentifier>{c4b60e9f-780d-41e0-b042-442943029f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\client\player">
+      <UniqueIdentifier>{4a94a03a-8bdc-4a30-8420-0e5efdd5f630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\client\renderer">
+      <UniqueIdentifier>{5de5b438-ff02-49ae-9c2a-0a3459f4b06b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\entity\projectile">
+      <UniqueIdentifier>{dc847bce-26c7-4840-a976-5c2a78a644f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\world\level\material">
+      <UniqueIdentifier>{4a0bdf4e-c5a2-4e6b-a05f-82cde41e11d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\net\minecraft\tags">
+      <UniqueIdentifier>{febf3cbf-440c-4108-9b90-649109d0070f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{0b66ca50-850e-4fec-8aa0-ca96ef61db79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\minhook">
+      <UniqueIdentifier>{3d7a63e0-2bab-496d-b9bd-3e01e092f17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\minhook\hde">
+      <UniqueIdentifier>{7ba3fa2c-76ec-4b91-a929-5604c45463cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\java\lang">
+      <UniqueIdentifier>{fdc79111-618b-43b5-ab01-74ed65a4c7a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{7909bec9-dc42-4753-94da-ff8e12f1a168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{b6344ce3-4dca-47db-9180-43ae0e26b253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{3b3a7ac8-b4be-48e7-ae87-325b6a24afbe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Java.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cppjavahook\JavaHook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\hkMinecraft.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\hkOpenGL.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\HookManager.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\buffer.c">
+      <Filter>Source Files\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hook.c">
+      <Filter>Source Files\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\trampoline.c">
+      <Filter>Source Files\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde32.c">
+      <Filter>Source Files\minhook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde64.c">
+      <Filter>Source Files\minhook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\DetourHook.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\AABB.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Util.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Java.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppjavahook\JavaHook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\Hook.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\hkMinecraft.h">
+      <Filter>Header Files\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\hkOpenGL.h">
+      <Filter>Header Files\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\HookManager.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\java\util\OptionalLong.h">
+      <Filter>Header Files\SDK\java\util</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\java\util\ArrayList.h">
+      <Filter>Header Files\SDK\java\util</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\item\Items.h">
+      <Filter>Header Files\SDK\net\minecraft\world\item</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\item\ItemLike.h">
+      <Filter>Header Files\SDK\net\minecraft\world\item</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\item\Item.h">
+      <Filter>Header Files\SDK\net\minecraft\world\item</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\item\ItemStack.h">
+      <Filter>Header Files\SDK\net\minecraft\world\item</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\item\BowItem.h">
+      <Filter>Header Files\SDK\net\minecraft\world\item</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\InteractionHand.h">
+      <Filter>Header Files\SDK\net\minecraft\world</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\phys\Vec3.h">
+      <Filter>Header Files\SDK\net\minecraft\world\phys</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\phys\shapes\VoxelShape.h">
+      <Filter>Header Files\SDK\net\minecraft\world\phys\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\com\mojang\math\Vector3f.h">
+      <Filter>Header Files\SDK\com\mojang\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\core\BlockPos.h">
+      <Filter>Header Files\SDK\net\minecraft\core</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\level\Level.h">
+      <Filter>Header Files\SDK\net\minecraft\world\level</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\level\block\state\BlockBehaviour.h">
+      <Filter>Header Files\SDK\net\minecraft\world\level\block\state</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\level\block\state\BlockState.h">
+      <Filter>Header Files\SDK\net\minecraft\world\level\block\state</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\entity\Entity.h">
+      <Filter>Header Files\SDK\net\minecraft\world\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\entity\LivingEntity.h">
+      <Filter>Header Files\SDK\net\minecraft\world\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\client\player\Player.h">
+      <Filter>Header Files\SDK\net\minecraft\client\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\client\player\AbstractClientPlayer.h">
+      <Filter>Header Files\SDK\net\minecraft\client\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\client\player\LocalPlayer.h">
+      <Filter>Header Files\SDK\net\minecraft\client\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\client\Camera.h">
+      <Filter>Header Files\SDK\net\minecraft\client</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\client\Minecraft.h">
+      <Filter>Header Files\SDK\net\minecraft\client</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\client\renderer\GameRenderer.h">
+      <Filter>Header Files\SDK\net\minecraft\client\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\phys\AABB.h">
+      <Filter>Header Files\SDK\net\minecraft\world\phys</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\level\ClipContext.h">
+      <Filter>Header Files\SDK\net\minecraft\world\level</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\phys\shapes\EntityCollisionContext.h">
+      <Filter>Header Files\SDK\net\minecraft\world\phys\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\phys\shapes\CollisionContext.h">
+      <Filter>Header Files\SDK\net\minecraft\world\phys\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\level\BlockGetter.h">
+      <Filter>Header Files\SDK\net\minecraft\world\level</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\phys\BlockHitResult.h">
+      <Filter>Header Files\SDK\net\minecraft\world\phys</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\phys\HitResult.h">
+      <Filter>Header Files\SDK\net\minecraft\world\phys</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\entity\projectile\ProjectileUtil.h">
+      <Filter>Header Files\SDK\net\minecraft\world\entity\projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\phys\EntityHitResult.h">
+      <Filter>Header Files\SDK\net\minecraft\world\phys</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\level\LevelReader.h">
+      <Filter>Header Files\SDK\net\minecraft\world\level</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\level\material\FluidState.h">
+      <Filter>Header Files\SDK\net\minecraft\world\level\material</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\tags\FluidTags.h">
+      <Filter>Header Files\SDK\net\minecraft\tags</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\tags\Tag.h">
+      <Filter>Header Files\SDK\net\minecraft\tags</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\entity\EntityType.h">
+      <Filter>Header Files\SDK\net\minecraft\world\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Util.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\DetourHook.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\java\lang\Thread.h">
+      <Filter>Header Files\SDK\java\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\java\lang\ClassLoader.h">
+      <Filter>Header Files\SDK\java\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\java\lang\Class.h">
+      <Filter>Header Files\SDK\java\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AABB.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\client\Timer.h">
+      <Filter>Header Files\SDK\net\minecraft\client</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

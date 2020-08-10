@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0af18dda-31e8-474a-a206-45fb78c41195}</ProjectGuid>
+    <RootNamespace>MinecraftSpeedrunHelper</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;MINECRAFTSPEEDRUNHELPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;MINECRAFTSPEEDRUNHELPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;MINECRAFTSPEEDRUNHELPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(JAVA_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jvm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;MINECRAFTSPEEDRUNHELPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(JAVA_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jvm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="cppjavahook\JavaHook.cpp" />
+    <ClCompile Include="Drawing.cpp" />
+    <ClCompile Include="Hooks\hkMinecraft.cpp" />
+    <ClCompile Include="Hooks\hkOpenGL.cpp" />
+    <ClCompile Include="Java.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Math\AABB.cpp" />
+    <ClCompile Include="Math\Math.cpp" />
+    <ClCompile Include="Math\Vector.cpp" />
+    <ClCompile Include="Memory\DetourHook.cpp" />
+    <ClCompile Include="Memory\HookManager.cpp" />
+    <ClCompile Include="minhook\src\buffer.c" />
+    <ClCompile Include="minhook\src\hde\hde32.c" />
+    <ClCompile Include="minhook\src\hde\hde64.c" />
+    <ClCompile Include="minhook\src\hook.c" />
+    <ClCompile Include="minhook\src\trampoline.c" />
+    <ClCompile Include="Util\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="cppjavahook\JavaHook.h" />
+    <ClInclude Include="Drawing.h" />
+    <ClInclude Include="Hooks\hkMinecraft.h" />
+    <ClInclude Include="Hooks\hkOpenGL.h" />
+    <ClInclude Include="Java.h" />
+    <ClInclude Include="Math\AABB.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Vector.h" />
+    <ClInclude Include="Memory\DetourHook.h" />
+    <ClInclude Include="Memory\Hook.h" />
+    <ClInclude Include="Memory\HookManager.h" />
+    <ClInclude Include="SDK\com\mojang\math\Vector3f.h" />
+    <ClInclude Include="SDK\java\lang\Class.h" />
+    <ClInclude Include="SDK\java\lang\ClassLoader.h" />
+    <ClInclude Include="SDK\java\lang\Thread.h" />
+    <ClInclude Include="SDK\java\util\ArrayList.h" />
+    <ClInclude Include="SDK\java\util\OptionalLong.h" />
+    <ClInclude Include="SDK\net\minecraft\client\Camera.h" />
+    <ClInclude Include="SDK\net\minecraft\client\Minecraft.h" />
+    <ClInclude Include="SDK\net\minecraft\client\player\AbstractClientPlayer.h" />
+    <ClInclude Include="SDK\net\minecraft\client\player\LocalPlayer.h" />
+    <ClInclude Include="SDK\net\minecraft\client\player\Player.h" />
+    <ClInclude Include="SDK\net\minecraft\client\renderer\GameRenderer.h" />
+    <ClInclude Include="SDK\net\minecraft\client\Timer.h" />
+    <ClInclude Include="SDK\net\minecraft\core\BlockPos.h" />
+    <ClInclude Include="SDK\net\minecraft\tags\FluidTags.h" />
+    <ClInclude Include="SDK\net\minecraft\tags\Tag.h" />
+    <ClInclude Include="SDK\net\minecraft\world\entity\Entity.h" />
+    <ClInclude Include="SDK\net\minecraft\world\entity\EntityType.h" />
+    <ClInclude Include="SDK\net\minecraft\world\entity\LivingEntity.h" />
+    <ClInclude Include="SDK\net\minecraft\world\entity\projectile\ProjectileUtil.h" />
+    <ClInclude Include="SDK\net\minecraft\world\InteractionHand.h" />
+    <ClInclude Include="SDK\net\minecraft\world\item\BowItem.h" />
+    <ClInclude Include="SDK\net\minecraft\world\item\Item.h" />
+    <ClInclude Include="SDK\net\minecraft\world\item\ItemLike.h" />
+    <ClInclude Include="SDK\net\minecraft\world\item\Items.h" />
+    <ClInclude Include="SDK\net\minecraft\world\item\ItemStack.h" />
+    <ClInclude Include="SDK\net\minecraft\world\level\BlockGetter.h" />
+    <ClInclude Include="SDK\net\minecraft\world\level\block\state\BlockBehaviour.h" />
+    <ClInclude Include="SDK\net\minecraft\world\level\block\state\BlockState.h" />
+    <ClInclude Include="SDK\net\minecraft\world\level\ClipContext.h" />
+    <ClInclude Include="SDK\net\minecraft\world\level\Level.h" />
+    <ClInclude Include="SDK\net\minecraft\world\level\LevelReader.h" />
+    <ClInclude Include="SDK\net\minecraft\world\level\material\FluidState.h" />
+    <ClInclude Include="SDK\net\minecraft\world\phys\AABB.h" />
+    <ClInclude Include="SDK\net\minecraft\world\phys\BlockHitResult.h" />
+    <ClInclude Include="SDK\net\minecraft\world\phys\EntityHitResult.h" />
+    <ClInclude Include="SDK\net\minecraft\world\phys\HitResult.h" />
+    <ClInclude Include="SDK\net\minecraft\world\phys\shapes\CollisionContext.h" />
+    <ClInclude Include="SDK\net\minecraft\world\phys\shapes\EntityCollisionContext.h" />
+    <ClInclude Include="SDK\net\minecraft\world\phys\shapes\VoxelShape.h" />
+    <ClInclude Include="SDK\net\minecraft\world\phys\Vec3.h" />
+    <ClInclude Include="Util\Util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
