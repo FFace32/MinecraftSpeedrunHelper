@@ -1,0 +1,10 @@
+ForceSeed = 1			# 1 - Force the seed, 0 - don't
+Seed = 2945671375784082726	# The seed to be forced, use the number format.
+
+ForceEnderPearls = 1		# 1 - Force the piglins to drop ender pearls, 0 - don't
+EnderPearls = 13		# How many enderpearls are the piglins forced to drop. They try to do drop the amount in as less trades as possible. Values greater than 15 will make the piglins always drop 8 for the first trades.
+
+DrawCrystalHitboxes = 1		# 1 - Draw end crystal hitboxes, 0 - don't
+DrawBowTrajectory = 1		# 1 - Draw the trajectory of the arrows that will be shot from a bow, 0 - don't
+
+PanicKey = 96			# Which key will unload MinecraftSpeedrunHelper. The value is a virtual-key code, see http://cherrytree.at/misc/vk.htm

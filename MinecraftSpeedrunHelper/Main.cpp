@@ -8,6 +8,8 @@
 #include "Hooks/hkOpenGL.h"
 #include "Util/Util.h"
 
+// If you don't know what's up with all these strings in here ("cix", "bdd" and such) and in the SDK, see this: https://minecraft.gamepedia.com/Obfuscation_map
+
 using namespace Minecraft;
 
 DWORD WINAPI Init( LPVOID hinstDLL )
