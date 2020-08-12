@@ -7,7 +7,7 @@ namespace net::minecraft::world::phys
 	class Vec3 : public _jobject
 	{
 	public:
-		DEFINE_THISCLASS( "dem" )
+		DEFINE_THISCLASS( "dck" )
 		
 		static auto init( jdouble x, jdouble y, jdouble z )
 		{

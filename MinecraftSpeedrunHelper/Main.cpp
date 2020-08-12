@@ -8,7 +8,7 @@
 #include "Hooks/hkOpenGL.h"
 #include "Util/Util.h"
 
-// If you don't know what's up with all these strings in here ("cix", "bdd" and such) and in the SDK, see this: https://minecraft.gamepedia.com/Obfuscation_map
+// If you don't know what's up with all these strings in here ("cht", "beq" and such) and in the SDK, see this: https://minecraft.gamepedia.com/Obfuscation_map
 
 using namespace Minecraft;
 
@@ -22,11 +22,11 @@ DWORD WINAPI Init( LPVOID hinstDLL )
 		using Memory::g_HookManager;
 
 		auto MinecraftHook = g_HookManager.RegisterHook( new JavaHook() );
-		MinecraftHook->AddHook( "cix"/*net.minecraft.world.level.levelgen.WorldGenSettings*/, "a"/*withSeed*/,
-								"(ZLjava/util/OptionalLong;)Lcix;"/*(boolean,java.util.OptionalLong)net.minecraft.world.level.levelgen.WorldGenSettings*/, Hooks::makeSettings );
+		MinecraftHook->AddHook( "cht"/*net.minecraft.world.level.levelgen.WorldGenSettings*/, "a"/*withSeed*/,
+								"(ZLjava/util/OptionalLong;)Lcht;"/*(boolean,java.util.OptionalLong)net.minecraft.world.level.levelgen.WorldGenSettings*/, Hooks::withSeed );
 
-		MinecraftHook->AddHook( "bdd"/*net.minecraft.world.entity.monster.piglin.PiglinAi*/, "m"/*getBarterResponseItems*/,
-								"(Lbdc;)Ljava/util/List;"/*(net.minecraft.world.entity.monster.piglin.Piglin)java.util.List*/, Hooks::getBarterResponseItems );
+		MinecraftHook->AddHook( "beq"/*net.minecraft.world.entity.monster.piglin.PiglinAi*/, "i"/*getBarterResponseItems*/,
+								"(Lbep;)Ljava/util/List;"/*(net.minecraft.world.entity.monster.piglin.Piglin)java.util.List*/, Hooks::getBarterResponseItems );
 
 		MinecraftHook->Init( g_Java.GetEnv(), g_Java.GetJVMTIEnv() );
 		

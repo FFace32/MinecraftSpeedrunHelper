@@ -9,32 +9,32 @@ namespace net::minecraft::world::phys
 	class HitResult : public _jobject
 	{
 	public:
-		DEFINE_THISCLASS( "dej" )
+		DEFINE_THISCLASS( "dci" )
 
 		class Type : public _jobject
 		{
 		public:
-			DEFINE_THISCLASS( "dej$a" )
+			DEFINE_THISCLASS( "dci$a" )
 
 			static auto MISS()
 			{
-				GET_STATICOBJECTFIELD( Type*, "a", "Ldej$a;" );
+				GET_STATICOBJECTFIELD( Type*, "a", "Ldci$a;" );
 			}
 
 			static auto ENTITY()
 			{
-				GET_STATICOBJECTFIELD( Type*, "c", "Ldej$a;" );
+				GET_STATICOBJECTFIELD( Type*, "c", "Ldci$a;" );
 			}
 		};
 
 		auto getType()
 		{
-			CALL_OBJECTMETHOD( Type*, "c", "()Ldej$a;" );
+			CALL_OBJECTMETHOD( Type*, "c", "()Ldci$a;" );
 		}
 
 		auto getLocation()
 		{
-			CALL_OBJECTMETHOD( Vec3*, "e", "()Ldem;" );
+			CALL_OBJECTMETHOD( Vec3*, "e", "()Ldck;" );
 		}
 	};
 }

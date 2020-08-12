@@ -122,8 +122,8 @@ JObjectGuard<T>::~JObjectGuard()
 template <typename T>
 void JObjectGuard<T>::Reset()
 {
-	if( auto Object = Release() )
-		g_Java.GetEnv()->DeleteLocalRef( reinterpret_cast<jobject>(Object) );
+	if ( auto Object = Release() )
+		g_Java.GetEnv()->DeleteLocalRef( reinterpret_cast<jobject>( Object ) );
 }
 
 #define DEFINE_THISCLASS( Name )	static jclass GetThisClass() \

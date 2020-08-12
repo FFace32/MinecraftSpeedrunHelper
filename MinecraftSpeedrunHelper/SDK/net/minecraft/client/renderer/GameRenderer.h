@@ -11,16 +11,16 @@ namespace net::minecraft::client
 		class GameRenderer : public _jobject
 		{
 		public:
-			DEFINE_THISCLASS( "ebs" )
+			DEFINE_THISCLASS( "dzr" )
 			
 			jdouble getFov( Camera* camera, jfloat tick, jboolean useSettingsFov )
 			{
-				CALL_DOUBLEMETHOD( "b", "(Ldlj;FZ)D", camera, tick, useSettingsFov );
+				CALL_DOUBLEMETHOD( "b", "(Ldjh;FZ)D", camera, tick, useSettingsFov );
 			}
 
 			auto getMainCamera()
 			{
-				CALL_OBJECTMETHOD( Camera*, "k", "()Ldlj;" );
+				CALL_OBJECTMETHOD( Camera*, "k", "()Ldjh;" );
 			}
 		};
 	}

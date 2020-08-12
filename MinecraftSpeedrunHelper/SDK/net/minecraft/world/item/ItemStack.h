@@ -2,24 +2,31 @@
 
 #include <Java.h>
 
-namespace net::minecraft::world::item
+namespace net::minecraft::world
 {
-    class ItemLike;
-    class Item;
-	
-    class ItemStack : public _jobject
+    namespace level
     {
-    public:
-        DEFINE_THISCLASS( "bki" )
-    	
-        static auto init( ItemLike* item, jint count )
-        {
-            CALL_NEWOBJECT( ItemStack*, "(Lbqa;I)V", item, count );
-        }
+        class ItemLike;
+    }
 
-        auto getItem()
+    namespace item
+    {
+        class Item;
+
+        class ItemStack : public _jobject
         {
-            CALL_OBJECTMETHOD( Item*, "b", "()Lbke;" );
-        }
-    };
+        public:
+            DEFINE_THISCLASS( "bly" )
+
+            static auto init( level::ItemLike* item, jint count )
+            {
+                CALL_NEWOBJECT( ItemStack*, "(Lbrt;I)V", item, count );
+            }
+
+            auto getItem()
+            {
+                CALL_OBJECTMETHOD( Item*, "b", "()Lblu;" );
+            }
+        };
+    }
 }

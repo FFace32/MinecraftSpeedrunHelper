@@ -7,11 +7,11 @@ namespace net::minecraft::world::phys
 	class EntityHitResult : public HitResult
 	{
 	public:
-		DEFINE_THISCLASS( "dei" )
+		DEFINE_THISCLASS( "dch" )
 
 		auto getEntity()
 		{
-			CALL_OBJECTMETHOD( entity::Entity*, "a", "()Laom;" );
+			CALL_OBJECTMETHOD( entity::Entity*, "a", "()Lapx;" );
 		}
 	};
 }

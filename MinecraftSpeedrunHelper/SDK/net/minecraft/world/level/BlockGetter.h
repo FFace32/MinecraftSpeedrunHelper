@@ -16,11 +16,11 @@ namespace net::minecraft::world
 		class BlockGetter : public _jobject
 		{
 		public:
-			DEFINE_THISCLASS( "bpg" )
+			DEFINE_THISCLASS( "bqz" )
 			
 			auto clip( ClipContext* context )
 			{
-				CALL_OBJECTMETHOD( phys::BlockHitResult*, "a", "(Lbpj;)Ldeh;", context );
+				CALL_OBJECTMETHOD( phys::BlockHitResult*, "a", "(Lbrc;)Ldcg;", context );
 			}
 		};
 	}

@@ -37,21 +37,21 @@ namespace net::minecraft
 			class Level : public BlockGetter // TO DO: Figure out how to implement multiple inheritance without breaking the memory layout
 			{
 			public:
-				DEFINE_THISCLASS( "bqb" )
+				DEFINE_THISCLASS( "bru" )
 
-					auto getBlockState( core::BlockPos* block )
+				auto getBlockState( core::BlockPos* block )
 				{
-					CALL_OBJECTMETHOD( block::state::BlockState*, "d_", "(Lfu;)Lcfj;", block );
+					CALL_OBJECTMETHOD( block::state::BlockState*, "d_", "(Lfx;)Lcee;", block );
 				}
 
 				auto getFluidState( core::BlockPos* block )
 				{
-					CALL_OBJECTMETHOD( material::FluidState*, "b", "(Lfu;)Lcxa;", block );
+					CALL_OBJECTMETHOD( material::FluidState*, "b", "(Lfx;)Lcuu;", block );
 				}
 
 				auto getEntities( entity::Entity* ignore, phys::AABB* AABB, jobject predicate )
 				{
-					CALL_OBJECTMETHOD( java::util::ArrayList<entity::Entity>*, "a", "(Laom;Ldeg;Ljava/util/function/Predicate;)Ljava/util/List;", ignore, AABB, predicate );
+					CALL_OBJECTMETHOD( java::util::ArrayList<entity::Entity>*, "a", "(Lapx;Ldcf;Ljava/util/function/Predicate;)Ljava/util/List;", ignore, AABB, predicate );
 				}
 			};
 		}

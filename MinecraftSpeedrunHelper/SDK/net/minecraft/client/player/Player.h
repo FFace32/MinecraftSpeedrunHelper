@@ -7,11 +7,11 @@ namespace net::minecraft::client::player
     class Player : public world::entity::LivingEntity
     {
     public:
-	    DEFINE_THISCLASS( "bec" )
+	    DEFINE_THISCLASS( "bft" )
 
     	jboolean canHarmPlayer( Player* player )
 	    {
-            CALL_BOOLEANMETHOD( "a", "(Lbec;)Z", player );
+            CALL_BOOLEANMETHOD( "a", "(Lbft;)Z", player );
 	    }
     };
 }

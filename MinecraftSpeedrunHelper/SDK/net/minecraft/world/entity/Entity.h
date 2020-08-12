@@ -22,11 +22,11 @@ namespace net::minecraft::world
 		class Entity : public _jobject
 		{
 		public:
-			DEFINE_THISCLASS( "aom" )
+			DEFINE_THISCLASS( "apx" )
 			
 			auto level()
 			{
-				GET_OBJECTFIELD( level::Level*, "l", "Lbqb;" );
+				GET_OBJECTFIELD( level::Level*, "l", "Lbru;" );
 			}
 
 			jfloat yRot()
@@ -46,52 +46,42 @@ namespace net::minecraft::world
 
 			auto getType()
 			{
-				CALL_OBJECTMETHOD( EntityType*, "U", "()Laoq;" );
+				CALL_OBJECTMETHOD( EntityType*, "W", "()Laqb;" );
 			}
 			
 			jboolean isOnGround()
 			{
-				CALL_BOOLEANMETHOD( "aj", "()Z" );
+				CALL_BOOLEANMETHOD( "an", "()Z" );
 			}
 
 			jboolean isPickable()
 			{
-				CALL_BOOLEANMETHOD( "aQ", "()Z" );
+				CALL_BOOLEANMETHOD( "aS", "()Z" );
 			}
 			
 			jboolean isAlive()
 			{
-				CALL_BOOLEANMETHOD( "aU", "()Z" );
+				CALL_BOOLEANMETHOD( "aW", "()Z" );
 			}
 
 			auto getBoundingBox()
 			{
-				CALL_OBJECTMETHOD( phys::AABB*, "cb", "()Ldeg;" );
-			}
-			
-			jfloat getBbWidth()
-			{
-				CALL_FLOATMETHOD( "cx", "()F" );
+				CALL_OBJECTMETHOD( phys::AABB*, "cb", "()Ldcf;" );
 			}
 
-			jfloat getBbHeight()
-			{
-				CALL_FLOATMETHOD( "cy", "()F" );
-			}
-			
 			auto position()
 			{
-				CALL_OBJECTMETHOD( phys::Vec3*, "cz", "()Ldem;" );
+				CALL_OBJECTMETHOD( phys::Vec3*, "cz", "()Ldck;" );
 			}
 
 			jboolean isPassengerOfSameVehicle( Entity* entity )
 			{
-				CALL_BOOLEANMETHOD( "x", "(Laom;)Z", entity );
+				CALL_BOOLEANMETHOD( "x", "(Lapx;)Z", entity );
 			}
 			
 			auto getDeltaMovement()
 			{
-				CALL_OBJECTMETHOD( phys::Vec3*, "cB", "()Ldem;" );
+				CALL_OBJECTMETHOD( phys::Vec3*, "cB", "()Ldck;" );
 			}
 
 			jdouble getEyeY()

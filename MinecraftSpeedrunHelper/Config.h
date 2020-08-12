@@ -14,7 +14,7 @@ namespace Minecraft
 		void Init();
 
 		bool ShouldForceSeed() const;
-		uint64_t GetSeed() const;
+		int64_t GetSeed() const;
 
 		bool ShouldForceEnderPearls() const;
 		uint32_t GetEnderPearlsAmount() const;
@@ -30,7 +30,7 @@ namespace Minecraft
 		void SetVariable( const std::string_view& Variable, const std::string_view& Value );
 
 		uint8_t m_ForceSeed;
-		uint64_t m_Seed;
+		int64_t m_Seed;
 
 		uint8_t m_ForceEnderPearls;
 		uint32_t m_EnderPearls;

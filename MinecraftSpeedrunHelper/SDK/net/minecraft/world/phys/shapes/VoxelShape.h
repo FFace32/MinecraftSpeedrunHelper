@@ -10,7 +10,7 @@ namespace net::minecraft::world::phys
 		class VoxelShape : public _jobject
 		{
 		public:
-			DEFINE_THISCLASS( "dfg" )
+			DEFINE_THISCLASS( "dde" )
 			
 			jboolean isEmpty()
 			{

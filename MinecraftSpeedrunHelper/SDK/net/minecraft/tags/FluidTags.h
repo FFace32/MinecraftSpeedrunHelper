@@ -9,11 +9,11 @@ namespace net::minecraft::tags
 	class FluidTags : public _jobject
 	{
 	public:
-		DEFINE_THISCLASS( "acz" )
+		DEFINE_THISCLASS( "aed" )
 
 		static auto WATER()
 		{
-			GET_STATICOBJECTFIELD( Tag*, "a", "Ladf$e;" );
+			GET_STATICOBJECTFIELD( Tag*, "b", "Laej$e;" );
 		}
 	};
 }

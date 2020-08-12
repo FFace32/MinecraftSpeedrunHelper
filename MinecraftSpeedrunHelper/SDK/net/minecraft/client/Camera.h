@@ -19,11 +19,11 @@ namespace net::minecraft
 		class Camera : public _jobject
 		{
 		public:
-			DEFINE_THISCLASS( "dlj" )
+			DEFINE_THISCLASS( "djh" )
 			
 			auto position()
 			{
-				GET_OBJECTFIELD( world::phys::Vec3*, "d", "Ldem;" );
+				GET_OBJECTFIELD( world::phys::Vec3*, "d", "Ldck;" );
 			}
 
 			auto forwards()

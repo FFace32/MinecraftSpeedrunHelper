@@ -16,7 +16,7 @@ namespace net::minecraft
 		class AABB : public _jobject
 		{
 		public:
-			DEFINE_THISCLASS( "deg" )
+			DEFINE_THISCLASS( "dcf" )
 
 			jdouble minX()
 			{
@@ -55,12 +55,12 @@ namespace net::minecraft
 			
 			auto move( core::BlockPos* blockPos )
 			{
-				CALL_OBJECTMETHOD( AABB*, "a", "(Lfu;)Ldeg;", blockPos );
+				CALL_OBJECTMETHOD( AABB*, "a", "(Lfx;)Ldcf;", blockPos );
 			}
 
 			jboolean contains( Vec3* pos )
 			{
-				CALL_BOOLEANMETHOD( "d", "(Ldem;)Z", pos );
+				CALL_BOOLEANMETHOD( "d", "(Ldck;)Z", pos );
 			}
 		};
 	}

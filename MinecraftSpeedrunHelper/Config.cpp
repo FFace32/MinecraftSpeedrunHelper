@@ -35,7 +35,7 @@ bool Config::ShouldForceSeed() const
 	return m_ForceSeed != 0;
 }
 
-uint64_t Config::GetSeed() const
+int64_t Config::GetSeed() const
 {
 	return m_Seed;
 }

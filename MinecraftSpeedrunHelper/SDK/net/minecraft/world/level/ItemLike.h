@@ -2,7 +2,7 @@
 
 #include <Java.h>
 
-namespace net::minecraft::world::item
+namespace net::minecraft::world::level
 {
     class ItemLike : public _jobject
     { };

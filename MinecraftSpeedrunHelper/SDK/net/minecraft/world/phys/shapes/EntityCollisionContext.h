@@ -7,7 +7,7 @@ namespace net::minecraft::world::phys
 	class EntityCollisionContext : public CollisionContext
 	{
 	public:
-		DEFINE_THISCLASS( "dew" )
+		DEFINE_THISCLASS( "dcu" )
 
 		void descending( jboolean value )
 		{
@@ -17,11 +17,6 @@ namespace net::minecraft::world::phys
 		void entityBottom( jdouble Value )
 		{
 			SET_DOUBLEFIELD( "c", Value );
-		}
-
-		void heldItem( item::Item* Value )
-		{
-			SET_OBJECTFIELD( "d", "Lbke;", Value );
 		}
 	};
 }

@@ -1112,58 +1112,52 @@ void ManuallyFixStackMapTable( ClassFile& ClassFile, ClassFile::StackMapTable_at
         StackMapTable.entries[1].locals[3].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "[Ljava/lang/Object;" ) );
 
         StackMapTable.entries[2].frame_type += 2;
-        ClassFile::verification_type_info Info;
-    	Info.tag = 7;
-        Info.cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "java/util/Map$Entry" ) );
-        StackMapTable.entries[2].locals.emplace_back( Info );
-        Info.cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "ug" ) );
-        StackMapTable.entries[2].locals.emplace_back( Info );
-
-        StackMapTable.entries[4].frame_type -= 2;
+        StackMapTable.entries[3].frame_type -= 2;
+    	
+        StackMapTable.entries[6].stack[0].offset += 60;
+        StackMapTable.entries[6].stack[1].offset += 60;
+        StackMapTable.entries[6].locals.erase( StackMapTable.entries[6].locals.begin() );
+        //
+        StackMapTable.entries[6].locals[0].tag = 7;
+        StackMapTable.entries[6].locals[0].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "cht" ) );
+        StackMapTable.entries[6].locals[1].tag = 1;
+        StackMapTable.entries[6].locals[2].tag = 7;
+        StackMapTable.entries[6].locals[2].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "java/util/OptionalLong" ) );
+        StackMapTable.entries[6].locals[3].tag = 7;
+        StackMapTable.entries[6].locals[3].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "[Ljava/lang/Object;" ) );
+        StackMapTable.entries[6].locals[4].tag = 4;
+        //
 
         StackMapTable.entries[7].stack[0].offset += 60;
         StackMapTable.entries[7].stack[1].offset += 60;
         StackMapTable.entries[7].locals.erase( StackMapTable.entries[7].locals.begin() );
         //
         StackMapTable.entries[7].locals[0].tag = 7;
-        StackMapTable.entries[7].locals[0].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "cix" ) );
+        StackMapTable.entries[7].locals[0].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "cht" ) );
         StackMapTable.entries[7].locals[1].tag = 1;
         StackMapTable.entries[7].locals[2].tag = 7;
         StackMapTable.entries[7].locals[2].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "java/util/OptionalLong" ) );
         StackMapTable.entries[7].locals[3].tag = 7;
         StackMapTable.entries[7].locals[3].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "[Ljava/lang/Object;" ) );
         StackMapTable.entries[7].locals[4].tag = 4;
+        StackMapTable.entries[7].locals[5].tag = 7;
+        StackMapTable.entries[7].locals[5].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "gi" ) );
         //
 
-        StackMapTable.entries[8].stack[0].offset += 60;
-        StackMapTable.entries[8].stack[1].offset += 60;
-        StackMapTable.entries[8].locals.erase( StackMapTable.entries[8].locals.begin() );
+        ClassFile::verification_type_info Info;
+        Info.tag = 0;
+        StackMapTable.entries[8].locals.emplace( StackMapTable.entries[8].locals.begin() + 2, Info );
+        StackMapTable.entries[8].locals.emplace( StackMapTable.entries[8].locals.begin() + 2, Info );
+        StackMapTable.entries[8].locals[5].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "gi" ) );
         //
         StackMapTable.entries[8].locals[0].tag = 7;
-        StackMapTable.entries[8].locals[0].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "cix" ) );
+        StackMapTable.entries[8].locals[0].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "cht" ) );
         StackMapTable.entries[8].locals[1].tag = 1;
         StackMapTable.entries[8].locals[2].tag = 7;
         StackMapTable.entries[8].locals[2].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "java/util/OptionalLong" ) );
         StackMapTable.entries[8].locals[3].tag = 7;
-        StackMapTable.entries[8].locals[3].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "[Ljava/lang/Object;" ) );
+        StackMapTable.entries[8].locals[3].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "cht" ) );
         StackMapTable.entries[8].locals[4].tag = 4;
-        StackMapTable.entries[8].locals[5].tag = 7;
-        StackMapTable.entries[8].locals[5].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "gh" ) );
-        //
-
-        Info.tag = 0;
-        StackMapTable.entries[9].locals.emplace( StackMapTable.entries[9].locals.begin() + 2, Info );
-        StackMapTable.entries[9].locals.emplace( StackMapTable.entries[9].locals.begin() + 2, Info );
-        StackMapTable.entries[9].locals[5].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "gh" ) );
-        //
-        StackMapTable.entries[9].locals[0].tag = 7;
-        StackMapTable.entries[9].locals[0].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "cix" ) );
-        StackMapTable.entries[9].locals[1].tag = 1;
-        StackMapTable.entries[9].locals[2].tag = 7;
-        StackMapTable.entries[9].locals[2].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "java/util/OptionalLong" ) );
-        StackMapTable.entries[9].locals[3].tag = 7;
-        StackMapTable.entries[9].locals[3].cpool_index = ClassFile.FindOrAddClass( ClassFile.FindOrAddUTF8( "cix" ) );
-        StackMapTable.entries[9].locals[4].tag = 4;
         //
     }
 }

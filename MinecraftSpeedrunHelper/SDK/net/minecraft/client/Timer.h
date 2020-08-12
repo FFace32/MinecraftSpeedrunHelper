@@ -7,7 +7,7 @@ namespace net::minecraft::client
 	class Timer : public _jobject
 	{
 	public:
-		DEFINE_THISCLASS( "dmj" )
+		DEFINE_THISCLASS( "dkh" )
 
 		jfloat partialTick()
 		{

@@ -1,22 +1,22 @@
 #pragma once
 
-#include "ItemLike.h"
+#include "../level/ItemLike.h"
 
 namespace net::minecraft::world::item
 {
-    class Item : public ItemLike
+    class Item : public level::ItemLike
     {
     public:
-        DEFINE_THISCLASS( "bke" )
+        DEFINE_THISCLASS( "blu" )
     	
         static jint getId( Item* item )
         {
-            CALL_STATICINTMETHOD( "a", "(Lbke;)I", item );
+            CALL_STATICINTMETHOD( "a", "(Lblu;)I", item );
         }
 
         static auto byId( jint id )
         {
-            CALL_STATICOBJECTMETHOD( Item*, "b", "(I)Lbke;", id );
+            CALL_STATICOBJECTMETHOD( Item*, "b", "(I)Lblu;", id );
         }
     };
 }

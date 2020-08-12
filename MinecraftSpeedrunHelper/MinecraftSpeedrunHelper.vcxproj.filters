@@ -200,9 +200,6 @@
     <ClInclude Include="SDK\net\minecraft\world\item\Items.h">
       <Filter>Header Files\SDK\net\minecraft\world\item</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\net\minecraft\world\item\ItemLike.h">
-      <Filter>Header Files\SDK\net\minecraft\world\item</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\net\minecraft\world\item\Item.h">
       <Filter>Header Files\SDK\net\minecraft\world\item</Filter>
     </ClInclude>
@@ -308,13 +305,7 @@
     <ClInclude Include="Memory\DetourHook.h">
       <Filter>Header Files\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\java\lang\Thread.h">
-      <Filter>Header Files\SDK\java\lang</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\java\lang\ClassLoader.h">
-      <Filter>Header Files\SDK\java\lang</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\java\lang\Class.h">
       <Filter>Header Files\SDK\java\lang</Filter>
     </ClInclude>
     <ClInclude Include="Drawing.h">
@@ -334,6 +325,9 @@
     </ClInclude>
     <ClInclude Include="Config.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\net\minecraft\world\level\ItemLike.h">
+      <Filter>Header Files\SDK\net\minecraft\world\level</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

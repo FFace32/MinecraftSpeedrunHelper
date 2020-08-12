@@ -19,21 +19,21 @@ namespace net::minecraft::client
 	class Minecraft : public _jobject
 	{
 	public:
-		DEFINE_THISCLASS( "dlx" )
+		DEFINE_THISCLASS( "djw" )
 
 		auto timer()
 		{
-			GET_OBJECTFIELD( Timer*, "O", "Ldmj;" );
+			GET_OBJECTFIELD( Timer*, "O", "Ldkh;" );
 		}
 		
 		auto gameRenderer()
 		{
-			GET_OBJECTFIELD( renderer::GameRenderer*, "h", "Lebs;" );
+			GET_OBJECTFIELD( renderer::GameRenderer*, "h", "Ldzr;" );
 		}
 
 		auto player()
 		{
-			GET_OBJECTFIELD( player::LocalPlayer*, "s", "Lebf;" );
+			GET_OBJECTFIELD( player::LocalPlayer*, "s", "Ldze;" );
 		}
 
 		jboolean pause()
@@ -48,7 +48,7 @@ namespace net::minecraft::client
 		
 		static auto getInstance()
 		{
-			CALL_STATICOBJECTMETHOD( Minecraft*, "B", "()Ldlx;" );
+			CALL_STATICOBJECTMETHOD( Minecraft*, "B", "()Ldjw;" );
 		}
 	};
 }

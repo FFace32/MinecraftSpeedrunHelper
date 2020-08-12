@@ -139,6 +139,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -184,9 +185,7 @@
     <ClInclude Include="Memory\Hook.h" />
     <ClInclude Include="Memory\HookManager.h" />
     <ClInclude Include="SDK\com\mojang\math\Vector3f.h" />
-    <ClInclude Include="SDK\java\lang\Class.h" />
     <ClInclude Include="SDK\java\lang\ClassLoader.h" />
-    <ClInclude Include="SDK\java\lang\Thread.h" />
     <ClInclude Include="SDK\java\util\ArrayList.h" />
     <ClInclude Include="SDK\java\util\OptionalLong.h" />
     <ClInclude Include="SDK\net\minecraft\client\Camera.h" />
@@ -206,13 +205,13 @@
     <ClInclude Include="SDK\net\minecraft\world\InteractionHand.h" />
     <ClInclude Include="SDK\net\minecraft\world\item\BowItem.h" />
     <ClInclude Include="SDK\net\minecraft\world\item\Item.h" />
-    <ClInclude Include="SDK\net\minecraft\world\item\ItemLike.h" />
     <ClInclude Include="SDK\net\minecraft\world\item\Items.h" />
     <ClInclude Include="SDK\net\minecraft\world\item\ItemStack.h" />
     <ClInclude Include="SDK\net\minecraft\world\level\BlockGetter.h" />
     <ClInclude Include="SDK\net\minecraft\world\level\block\state\BlockBehaviour.h" />
     <ClInclude Include="SDK\net\minecraft\world\level\block\state\BlockState.h" />
     <ClInclude Include="SDK\net\minecraft\world\level\ClipContext.h" />
+    <ClInclude Include="SDK\net\minecraft\world\level\ItemLike.h" />
     <ClInclude Include="SDK\net\minecraft\world\level\Level.h" />
     <ClInclude Include="SDK\net\minecraft\world\level\LevelReader.h" />
     <ClInclude Include="SDK\net\minecraft\world\level\material\FluidState.h" />

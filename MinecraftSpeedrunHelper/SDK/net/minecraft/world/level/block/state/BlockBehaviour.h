@@ -28,7 +28,7 @@ namespace net::minecraft
 					class BlockStateBase : public _jobject
 					{
 					public:
-						DEFINE_THISCLASS( "cfi$a" )
+						DEFINE_THISCLASS( "ced$a" )
 
 						jboolean isAir()
 						{
@@ -37,7 +37,7 @@ namespace net::minecraft
 
 						auto getCollisionShape( BlockGetter* getter, core::BlockPos* block )
 						{
-							CALL_OBJECTMETHOD( phys::shapes::VoxelShape*, "k", "(Lbpg;Lfu;)Ldfg;", getter, block );
+							CALL_OBJECTMETHOD( phys::shapes::VoxelShape*, "k", "(Lbqz;Lfx;)Ldde;", getter, block );
 						}
 					};
 				};

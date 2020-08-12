@@ -16,11 +16,11 @@ namespace net::minecraft::world
 		class LivingEntity : public Entity
 		{
 		public:
-			DEFINE_THISCLASS( "aoy" )
+			DEFINE_THISCLASS( "aqj" )
 			
 			auto getItemInHand( InteractionHand* hand )
 			{
-				CALL_OBJECTMETHOD( item::ItemStack*, "b", "(Lanf;)Lbki;", hand );
+				CALL_OBJECTMETHOD( item::ItemStack*, "b", "(Laoq;)Lbly;", hand );
 			}
 
 			jint getUseItemRemainingTicks()

@@ -20,38 +20,38 @@ namespace net::minecraft::world
 		class ClipContext : public _jobject
 		{
 		public:
-			DEFINE_THISCLASS( "bpj" )
+			DEFINE_THISCLASS( "brc" )
 
 			class Block : public _jobject
 			{
 			public:
-				DEFINE_THISCLASS( "bpj$a" )
+				DEFINE_THISCLASS( "brc$a" )
 
 				static auto COLLIDER()
 				{
-					GET_STATICOBJECTFIELD( Block*, "a", "Lbpj$a;" );
+					GET_STATICOBJECTFIELD( Block*, "a", "Lbrc$a;" );
 				}
 			};
 
 			class Fluid : public _jobject
 			{
 			public:
-				DEFINE_THISCLASS( "bpj$b" )
+				DEFINE_THISCLASS( "brc$b" )
 
 				static auto NONE()
 				{
-					GET_STATICOBJECTFIELD( Fluid*, "a", "Lbpj$b;" );
+					GET_STATICOBJECTFIELD( Fluid*, "a", "Lbrc$b;" );
 				}
 			};
 
 			auto collisionContext()
 			{
-				GET_OBJECTFIELD( phys::CollisionContext*, "e", "Lder;" );
+				GET_OBJECTFIELD( phys::CollisionContext*, "e", "Ldcp;" );
 			}
 			
 			static auto init( phys::Vec3* from, phys::Vec3* to, Block* block, Fluid* fluid, entity::Entity* entity )
 			{
-				CALL_NEWOBJECT( ClipContext*, "(Ldem;Ldem;Lbpj$a;Lbpj$b;Laom;)V", from, to, block, fluid, entity );
+				CALL_NEWOBJECT( ClipContext*, "(Ldck;Ldck;Lbrc$a;Lbrc$b;Lapx;)V", from, to, block, fluid, entity );
 			}
 		};
 	}

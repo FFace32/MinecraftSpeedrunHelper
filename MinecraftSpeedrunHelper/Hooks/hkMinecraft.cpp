@@ -12,7 +12,7 @@
 
 using namespace Minecraft;
 
-void Hooks::makeSettings( JNIEnv* Env, const JavaHook::HookData& HookData ) // cix/*net.minecraft.world.level.levelgen.WorldGenSettings*/ (0 = cix this, 1 = boolean hardcore, 2 = java.util.OptionalLong seed)
+void Hooks::withSeed( JNIEnv* Env, const JavaHook::HookData& HookData ) // cht/*net.minecraft.world.level.levelgen.WorldGenSettings*/ (0 = cht this, 1 = boolean hardcore, 2 = java.util.OptionalLong seed)
 {
 	g_Java.SetEnv( Env ); // Doing this in every hook is recommended
 
@@ -20,7 +20,7 @@ void Hooks::makeSettings( JNIEnv* Env, const JavaHook::HookData& HookData ) // c
 		HookData.SetArgument( 2, java::util::OptionalLong::of( g_Config.GetSeed() ) );
 }
 
-void Hooks::getBarterResponseItems( JNIEnv* Env, const JavaHook::HookData& HookData ) // java.util.List (0 = dbc/*net.minecraft.world.entity.monster.piglin.Piglin*/ piglin)
+void Hooks::getBarterResponseItems( JNIEnv* Env, const JavaHook::HookData& HookData ) // java.util.List (0 = beq/*net.minecraft.world.entity.monster.piglin.Piglin*/ piglin)
 {
 	g_Java.SetEnv( Env ); // Doing this in every hook is recommended
 

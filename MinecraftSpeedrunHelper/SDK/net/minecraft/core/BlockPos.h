@@ -7,7 +7,7 @@ namespace net::minecraft::core
 	class BlockPos : public _jobject
 	{
 	public:
-		DEFINE_THISCLASS( "fu" )
+		DEFINE_THISCLASS( "fx" )
 
 		class MutableBlockPos;
 		
@@ -20,7 +20,7 @@ namespace net::minecraft::core
 	class BlockPos::MutableBlockPos : public BlockPos
 	{
 	public:
-		DEFINE_THISCLASS( "fu$a" )
+		DEFINE_THISCLASS( "fx$a" )
 
 		static auto init()
 		{
@@ -29,7 +29,7 @@ namespace net::minecraft::core
 		
 		auto set( jint x, jint y, jint z )
 		{
-			CALL_OBJECTMETHOD( MutableBlockPos*, "d", "(III)Lfu$a;", x, y, z );
+			CALL_OBJECTMETHOD( MutableBlockPos*, "d", "(III)Lfx$a;", x, y, z );
 		}
 	};
 }

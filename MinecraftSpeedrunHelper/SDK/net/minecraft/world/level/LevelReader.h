@@ -7,7 +7,7 @@ namespace net::minecraft::world::level
 	class LevelReader : public _jobject
 	{
 	public:
-		DEFINE_THISCLASS( "bqd" )
+		DEFINE_THISCLASS( "brw" )
 
 		jboolean hasChunksAt( jint minX, jint minY, jint minZ, jint maxX, jint maxY, jint maxZ )
 		{
