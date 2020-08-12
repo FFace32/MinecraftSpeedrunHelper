@@ -6,6 +6,6 @@ format and Java bytecode...
 
 This project is an usage example for my upcoming library *cppjavahook*. (very creative name, indeed)
 
-This was only tested on x64 Windows and it's meant for Minecraft 1.16.2 only.
+This was only tested on x64 Windows and it's meant for vanilla Minecraft 1.16.2 only.
 
 Note: The --recursive option should be used when cloning.
